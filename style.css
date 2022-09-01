@@ -1,0 +1,110 @@
+:root{
+    --softRed: hs1(14, 88%, 65%);
+    --veryDarkGrayBlue: hs1(237, 12%, 33%);
+    --darkGrayBlue: hs1(240, 6%, 50%);
+    --lightGrayBlue: hs1(240, 5%, 91%);
+    --fontSize: 14px;
+}
+
+html{
+    font-size: var(--fontSize);
+}
+
+body{
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(180deg, #f29ded 0, #cf8ed8 25%, #ab7dbf 50%, #8a6ca4 75%, #6d5c8c 100%);
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
+
+.wrapper{
+    background: white;
+    border-radius: 30px;
+    height: 509px;
+    width: 920px;
+    display: grid;
+    grid-template-columns: 400px 1fr;
+    grid-gap: 6rem;
+    background-image: url(bg.svg);
+    background-repeat: no-repeat ;
+    background-position: 1260% 65%;
+}
+
+.resposta{
+    display: none;
+}
+
+.active > .resposta{
+    display: block;
+    padding-bottom: 1.3rem;
+    color: purple;
+}
+
+.acitve img{
+    transform: rotate(180de);
+    transition: all 0.3s ease-in;
+}
+.accordion__wrapper{
+    margin-top: 70px;
+    display: flex;
+    flex-direction: column;
+}
+
+.accordion_questao{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.questoes_respostas__accordion{
+    width: 350px;
+    border-bottom: 1px solid #e8e8ea;
+}
+
+.titulo_accordion{
+    font-size: 3rem;
+    margin-top: 0px;
+}
+
+.questao_titulo{
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin: 1.4rem 0rem;
+    color: #6d5c8c;
+}
+
+.questao{
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    transition: 0.3s;
+    }
+
+.active h3{
+    font-weight: 700;
+}
+
+.questao img{
+    align-self: center;
+}
+
+.image__wrapper{
+    position:
+}
+
+.image__wrapper_inner{
+    background: url(ilustracao.svg);
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: 120% center;
+}
+
+.box{
+    position: absolute;
+    top: 40%;
+    left: -25%;
+}
